@@ -13,7 +13,8 @@ open /Applications/Firefox\ Developer\ Edition.app
 # configure git
 git config --global user.name "spongee" && git config --global user.email "coding.guru16@gmail.com"
 
-# install & oh-my-zsh
+# install oh-my-zsh
+set +e
 zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
 
 # configure oh-my-zsh
