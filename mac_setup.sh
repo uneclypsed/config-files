@@ -16,26 +16,26 @@ open /Applications/Firefox\ Developer\ Edition.app
 git config --global user.name "spongee" && git config --global user.email "coding.guru16@gmail.com"
 
 # install oh-my-zsh
-RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
+RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # configure oh-my-zsh
-curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/.zshrcMAC -o ~/.zshrc && \
+curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/.zshrcMAC -o ~/.zshrc
 
 # install oh-my-zsh plugins
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && \
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete && \
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # install userChrome.css
 export FIREFOX_PROFILE="$(echo ~/Library/Application\ Support/Firefox/Profiles/*.dev-edition-default)" && \
 curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/userChrome.css -o userChrome.css && \
-mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/ && \
+mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/
 
 # retrieve nightTab backup
-curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json && \
+curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
 
 # update shell & finish
-clear && \
+clear && source ~/.zshrc && \
 
 echo "The following applications and configurations must be installed manually:\n
     * XCode\n
@@ -43,6 +43,4 @@ echo "The following applications and configurations must be installed manually:\
     * VEXCode V5 Pro\n
     * BlueStacks\n
     * Microsoft OneNote\n
-    * Firefox nightTab (.json file located in ~/Desktop)" && \
-
-source ~/.zshrc
+    * Firefox nightTab (.json file located in ~/Desktop)"
