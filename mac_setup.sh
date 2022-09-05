@@ -10,7 +10,7 @@ brew install python openjdk git node npm gcc wget
 brew install --cask steam minecraft homebrew/cask-versions/firefox-developer-edition google-chrome-dev microsoft-edge discord skype zoom eqmac streamlabs-obs vlc adobe-creative-cloud blender autodesk-fusion360 visual-studio-code github unity vmware-fusion wireshark qbittorrent ti-connect-ce google-drive vitalsource-bookshelf clickup 
 
 # startup Firefox to generate necessary directories
-open /Applications/Firefox\ Developer\ Edition.app
+open -W /Applications/Firefox\ Developer\ Edition.app && echo "Launch Firefox, then quit to continue."
 
 # configure git
 git config --global user.name "spongee" && git config --global user.email "coding.guru16@gmail.com"
