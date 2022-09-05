@@ -38,9 +38,9 @@ curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTa
 clear && source ~/.zshrc && \
 
 echo "The following applications and configurations must be installed manually:\n
-    * XCode\n
-    * VEXCode V5\n
-    * VEXCode V5 Pro\n
-    * BlueStacks\n
-    * Microsoft OneNote\n
+    * XCode
+    * VEXCode V5
+    * VEXCode V5 Pro
+    * BlueStacks
+    * Microsoft OneNote
     * Firefox nightTab (.json file located in ~/Desktop)"
