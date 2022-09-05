@@ -16,7 +16,7 @@ open /Applications/Firefox\ Developer\ Edition.app
 git config --global user.name "spongee" && git config --global user.email "coding.guru16@gmail.com"
 
 # install oh-my-zsh
-RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sed s/'set -e'/''/)" && \
+RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
 
 # configure oh-my-zsh
 curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/.zshrcMAC -o ~/.zshrc && \
