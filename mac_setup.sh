@@ -35,7 +35,7 @@ mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/
 curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
 
 # update shell & finish
-clear && source ~/.zshrc && \
+clear
 
 echo "The following applications and configurations must be installed manually:\n
     * XCode
@@ -43,4 +43,6 @@ echo "The following applications and configurations must be installed manually:\
     * VEXCode V5 Pro
     * BlueStacks
     * Microsoft OneNote
-    * Firefox nightTab (.json file located in ~/Desktop)"
+    * Firefox nightTab (.json file located in ~/Desktop)\n"
+    
+source ~/.zshrc
