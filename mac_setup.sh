@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -a
-
 # First, install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -10,7 +8,13 @@ brew install python openjdk git node npm gcc wget
 brew install --cask steam minecraft homebrew/cask-versions/firefox-developer-edition google-chrome-dev microsoft-edge discord skype zoom eqmac streamlabs-obs vlc adobe-creative-cloud blender autodesk-fusion360 visual-studio-code github unity vmware-fusion wireshark qbittorrent ti-connect-ce google-drive vitalsource-bookshelf clickup 
 
 # startup Firefox to generate necessary directories
-open -W /Applications/Firefox\ Developer\ Edition.app && echo "Launch Firefox, then quit to continue."
+xattr -d com.apple.quarantine /Applications/Firefox\ Developer\ Edition.app
+/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox-bin & pid=$! && sleep 10 && kill $pid
+
+# install userChrome.css
+export FIREFOX_PROFILE="$(echo ~/Library/Application\ Support/Firefox/Profiles/*.dev-edition-default)" && \
+curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/userChrome.css -o userChrome.css && \
+mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/
 
 # configure git
 git config --global user.name "spongee" && git config --global user.email "coding.guru16@gmail.com"
@@ -26,11 +30,6 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete && \
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# install userChrome.css
-export FIREFOX_PROFILE="$(echo ~/Library/Application\ Support/Firefox/Profiles/*.dev-edition-default)" && \
-curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/userChrome.css -o userChrome.css && \
-mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/
-
 # retrieve nightTab backup
 curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
 
@@ -43,6 +42,7 @@ echo "The following applications and configurations must be installed manually:\
     * VEXCode V5 Pro
     * BlueStacks
     * Microsoft OneNote
-    * Firefox nightTab (.json file located in ~/Desktop)\n"
+    * Firefox nightTab (.json file located in ~/Desktop)
+    * Firefox Color (black=(12, 15, 14), turquoise=(104, 243, 207))\n"
     
 source ~/.zshrc
