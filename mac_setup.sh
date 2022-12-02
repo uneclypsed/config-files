@@ -4,7 +4,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install all applications and cli tools
-brew install python openjdk git node npm gcc wget
+brew install python openjdk git node npm gcc wget & \
 brew install --cask font-space-mono-nerd-font font-jetbrains-mono-nerd-font font-dm-mono steam minecraft firefox-developer-edition google-chrome-dev microsoft-edge discord skype zoom eqmac streamlabs-obs vlc adobe-creative-cloud blender autodesk-fusion360 visual-studio-code github godot vmware-fusion wireshark qbittorrent ti-connect-ce google-drive vitalsource-bookshelf clickup 
 
 # startup Firefox to generate necessary directories
