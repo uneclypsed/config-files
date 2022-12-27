@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # install git
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm git
 
 # install yay
