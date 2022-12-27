@@ -21,7 +21,7 @@ curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/.zshrcA
 # ricing
 ## deps
 yay -S --noconfirm nerd-fonts-jetbrains-mono nerd-fonts-victor-mono nerd-fonts-mplus ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons ttf-remixicon ttf-icomoon-feather
-yay -S --noconfirm xorg sddm i3-gaps qt5-graphicaleffects-git qt5-quickcontrols-git kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
+yay -S --noconfirm xorg sddm i3-gaps qt5-graphicaleffects-git qt5-quickcontrols-git rustup kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
 ## gtk theme
 git clone https://github.com/stronk-dev/Tokyo-Night-Linux.git
 cd Tokyo-Night-Linux
