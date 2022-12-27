@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm git
 
 # install yay
 sudo pacman -S --noconfirm base-devel
-cd /opt && git clone https://aur.archlinux.org/yay-git.git
+cd /opt && sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $(whoami):$(whoami) ./yay-git
 cd yay-git
 makepkg -si
