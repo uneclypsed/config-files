@@ -16,7 +16,7 @@ makepkg -si
 RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # configure oh-my-zsh
-curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/.zshrcARCH -o ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/spomgee/config-files/main/.zshrcARCH -o ~/.zshrc
 
 # ricing
 ## deps
