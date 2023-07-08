@@ -104,10 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tunnel="ssh -R 80:localhost:8080 nokey@localhost.run"
 alias get="brew install"
 alias remove="brew uninstall"
 alias up="brew upgrade"
 alias s="brew search"
 alias f="sudo find / | grep"
 alias fh="find ~ | grep"
+alias szsh="source ~/.zshrc"
+alias tunnel="ssh -R 80:localhost:8080 nokey@localhost.run"
