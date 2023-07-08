@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
 # install git
-sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm git
+sudo pacman -Syu
+sudo pacman -S git
 git config --global user.name "spomgee" && git config --global user.email "coding.guru16@gmail.com"
 
 # install yay
-sudo pacman -S --noconfirm base-devel
+sudo pacman -S base-devel
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $(whoami):$(whoami) ./yay-git
@@ -21,8 +21,8 @@ curl -fsSL https://raw.githubusercontent.com/spomgee/config-files/main/.zshrcARC
 
 # ricing
 ## deps
-yay -S --noconfirm ttf-jetbrains-mono-nerd ttf-victor-mono-nerd ttf-mplus-nerd ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons ttf-remixicon ttf-icomoon-feather
-yay -S --noconfirm xorg sddm sddm-theme-tokyo-night i3-gaps qt5-graphicaleffects-git qt5-quickcontrols-git rustup kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
+yay -S ttf-jetbrains-mono-nerd ttf-victor-mono-nerd ttf-mplus-nerd ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons-git ttf-remixicon ttf-icomoon-feather
+yay -S xorg sddm sddm-theme-tokyo-night i3-gaps qt5-graphicaleffects-git qt5-quickcontrols-git rustup kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
 sudo systemctl enable --now bluetooth
 ## gtk theme
 git clone https://github.com/stronk-dev/Tokyo-Night-Linux.git
@@ -47,7 +47,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # install all applications and cli tools
 get python jdk nodejs npm gcc wget sass
 get nemo xplr cups fortune-mod fortune-mod-archlinux colorgrab flameshot
-get firefox-developer-edition google-chrome-dev discord zoom vlc blender visual-studio-code-bin wireshark qbittorrentmegasync
+get firefox-developer-edition google-chrome-dev discord zoom vlc blender visual-studio-code-bin wireshark qbittorrent megasync
 
 # startup Firefox to generate necessary directories
 firefox-developer-edition & pid=$! && sleep 10 && kill $pid
