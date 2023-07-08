@@ -47,7 +47,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # install all applications and cli tools
 get python jdk nodejs npm gcc wget sass
 get nemo xplr cups fortune-mod fortune-mod-archlinux colorgrab flameshot
-get firefox-developer-edition google-chrome-dev discord zoom streamlabs-obs vlc blender autodesk-fusion360 visual-studio-code-bin wireshark qbittorrent ti-connect-ce google-drive megasync
+get firefox-developer-edition google-chrome-dev discord zoom vlc blender visual-studio-code-bin wireshark qbittorrentmegasync
 
 # startup Firefox to generate necessary directories
 firefox-developer-edition & pid=$! && sleep 10 && kill $pid
@@ -66,6 +66,10 @@ clear
 
 echo "The following applications and configurations must be installed manually:\n
     * BlueStacks
+    * Streamlabs OBS
+    * Autodesk Fusion360
+    * Google Drive
+    * TI-Connect CE
     * Firefox nightTab (.json file located in ~/Desktop)
     * Firefox Color (black=(12, 15, 14), turquoise=(104, 243, 207))\n"
     
