@@ -104,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tunnel="ssh -R 80:localhost:8080 nokey@localhost.run"
 alias get="yay -Syu --noconfirm"
 alias remove="yay -Rns --noconfirm"
 alias up="yay -Syu"
@@ -112,6 +111,8 @@ alias s="yay"
 alias doihave="yay -Qs"
 alias f="sudo find / | grep"
 alias fh="find ~ | grep"
+alias szsh="source ~/.zshrc"
+alias tunnel="ssh -R 80:localhost:8080 nokey@localhost.run"
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -144,6 +145,3 @@ ex ()
 # (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 # ZSH_HIGHLIGHT_STYLES[path]=none
 # ZSH_HIGHLIGHT_STYLES[path_prefix]=none
-
-#### STARSHIP PROMPT ####
-eval "$(starship init zsh)"
