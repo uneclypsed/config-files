@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 alias get="yay -Syu --noconfirm"
 alias remove="yay -Rns --noconfirm"
 alias up="yay -Syu"
-alias s="yay"
+alias s="yay -Ss"
 alias doihave="yay -Qs"
 alias f="sudo find / | grep"
 alias fh="find ~ | grep"
