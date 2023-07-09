@@ -28,7 +28,7 @@ sudo systemctl enable --now bluetooth
 git clone https://github.com/stronk-dev/Tokyo-Night-Linux.git
 cd Tokyo-Night-Linux
 cp -a .config .xinitrc .Xresources -t ~
-cp -a usr/share/themes/TokyoNight /usr/share/themes/
+sudo cp -a usr/share/themes/TokyoNight /usr/share/themes/
 ## sddm
 echo "[Theme]\nCurrent=tokyo-night-sddm" | sudo tee /etc/sddm.conf
 sudo systemctl enable sddm
