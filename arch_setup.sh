@@ -22,7 +22,7 @@ curl -fsSL https://raw.githubusercontent.com/spomgee/config-files/main/.zshrcARC
 # ricing
 ## deps
 yay -S ttf-jetbrains-mono-nerd ttf-victor-mono-nerd ttf-mplus-nerd ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons-git ttf-remixicon ttf-icomoon-feather
-yay -S xorg sddm sddm-theme-tokyo-night i3-gaps qt5-graphicaleffects-git qt5-quickcontrols-git rustup kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
+yay -S xorg sddm sddm-theme-tokyo-night i3-gaps qt5-graphicaleffects-git qt5-quickcontrols2-git rustup kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git lxappearance kava neofetch lolcal cowsay wisdom-mod bash-pipes cbonsai bpytop network-manager-applet blueman clipit
 sudo systemctl enable --now bluetooth
 ## gtk theme
 git clone https://github.com/stronk-dev/Tokyo-Night-Linux.git
