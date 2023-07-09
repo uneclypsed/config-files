@@ -62,6 +62,7 @@ mkdir ~/Desktop
 curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
 
 # update shell & finish
+yay
 clear
 
 echo "The following applications and configurations must be installed manually:\n
