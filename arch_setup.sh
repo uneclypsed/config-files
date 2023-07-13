@@ -26,7 +26,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ## fonts
 yay -S ttf-jetbrains-mono ttf-victor-mono-nerd ttf-mplus-nerd ttf-jetbrains-mono ttf-font-awesome ttf-material-icons ttf-remixicon ttf-icomoon-feather
 ## utils
-yay -S kitty bpytop network-manager-applet xclipboard wget xplr cups colorgrab flameshot
+yay -S pciutils usbutils kitty bpytop network-manager-applet xclipboard wget xplr cups colorgrab flameshot
 ## ricing graphics pkgs
 yay -S xorg sddm i3-gaps i3-lock-color qt5-graphicaleffects qt5-quickcontrols2 polybar rofi rofi-power-menu-git rofi-emoji dunst light picom-jonaburg-git feh lxappearance cava ueberzug
 ## audio and bluetooth
