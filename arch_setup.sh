@@ -3,7 +3,7 @@
 # install git
 sudo pacman -Syu
 sudo pacman -S git
-git config --global user.name "spomgee" && git config --global user.email "coding.guru16@gmail.com"
+git config --global user.name "savivanai" && git config --global user.email "savivanairi@gmail.com"
 
 # install yay
 sudo pacman -S base-devel
@@ -16,7 +16,7 @@ makepkg -si
 # install oh-my-zsh
 RUNZSH='no' zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # configure oh-my-zsh
-curl -fsSL https://raw.githubusercontent.com/spomgee/config-files/main/.zshrcARCH -o ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/savivanai/config-files/main/.zshrcARCH -o ~/.zshrc
 # install oh-my-zsh plugins
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && \
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete && \
@@ -34,7 +34,7 @@ yay -S pulseaudio-control pipewire pipewire-pulse pipewire-jack pipewire-audio p
 ## sdks and runtimes
 yay -S rustup python python-pip jdk nodejs npm gcc dart-sass
 ## apps
-yay -S nemo firefox-developer-edition google-chrome-dev discord vlc blender visual-studio-code-bin wireshark-gtk2 qbittorrent megasync-bin
+yay -S nemo firefox-developer-edition google-chrome-dev discord vlc visual-studio-code-bin megasync-bin notion-app notion-calendar-electron
 ## fun stuff
 yay -S neofetch lolcat cowsay wisdom-mod fortune-mod fortune-mod-archlinux cbonsai bash-pipes
 
@@ -59,11 +59,11 @@ git clone https://github.com/rototrash/wallpapers.git
 firefox-developer-edition & pid=$! && sleep 10 && kill $pid
 ## install userChrome.css
 export FIREFOX_PROFILE="$(echo ~/.mozilla/firefox/*.dev-edition-default)" && \
-curl -fsSL https://raw.githubusercontent.com/spomgee/config-files/main/userChrome.css -o userChrome.css && \
+curl -fsSL https://raw.githubusercontent.com/savivanai/config-files/main/userChrome.css -o userChrome.css && \
 mkdir $FIREFOX_PROFILE/chrome/ && mv userChrome.css $FIREFOX_PROFILE/chrome/
 ## retrieve nightTab backup
 mkdir ~/Desktop
-curl -fsSL https://raw.githubusercontent.com/itSpongee/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
+curl -fsSL https://raw.githubusercontent.com/savivanai/config-files/main/nightTab.json -o ~/Desktop/nightTab.json
 
 # enable services
 sudo systemctl enable --now bluetooth
@@ -76,7 +76,6 @@ echo "The following applications and configurations must be installed manually:\
     * Streamlabs OBS
     * Autodesk Fusion360
     * Google Drive
-    * TI-Connect CE
     * Firefox nightTab (.json file located in ~/Desktop)
     * Firefox Color (black=(12, 15, 14), turquoise=(104, 243, 207))\n\n
     Start xorg using sddm."
